@@ -4,3 +4,4 @@ vcs.xml
 modules.xml
 workspace.xml
 inspectionProfiles/
+users/__pycache__
