@@ -4,4 +4,4 @@ vcs.xml
 modules.xml
 workspace.xml
 inspectionProfiles/
-users/__pycache__
+users/__pycache__/views.cpython-311.pyc
