@@ -14,6 +14,7 @@ router_apiv1 = APIRouter(tags=['Products'])
 async def get_products(session: AsyncSession = Depends(db_helper.scoped_session_dependency)):
     return await crud.get_products(session=session)
 
+
 @router_apiv1.post('/', response_model=Product, status_code=status.HTTP_201_CREATED)
 async def create_product(
         product_in: ProductCreate,

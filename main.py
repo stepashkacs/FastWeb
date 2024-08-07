@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
 
-from items_views import items_router
 from users.views import user_router
 from api_v1 import api_router
 
@@ -15,7 +14,6 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan)
-app.include_router(items_router)
 app.include_router(user_router)
 app.include_router(api_router)
 
