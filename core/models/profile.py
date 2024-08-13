@@ -5,7 +5,6 @@ from sqlalchemy import String
 from .mixin import UserRelationMixin
 
 
-
 class Profile(Base, UserRelationMixin):
     _user_back_populates = 'profile'
     _user_id_unique = True
