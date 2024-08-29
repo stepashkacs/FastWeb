@@ -30,7 +30,6 @@ async def get_product(
     return product
 
 
-
 @router_apiv1.put('/{product_id}/')
 async def update_product(
         product_update: ProductUpdate,
